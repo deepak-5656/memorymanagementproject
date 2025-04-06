@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Memory Management System</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Real Time Memory Management System</h1>
+     <div class="controls">
+            <div class="input-group">
+                <label for="processId">Process ID:</label>
+                <input type="text" id="processId" placeholder="Enter Process ID">
+            </div>
+            
+            <div class="input-group">
+                <label for="size">Size (KB):</label>
+                <input type="number" id="size" min="4" placeholder="Min: 4KB">
+            </div>
+            
+            <div class="input-group">
+                <label for="algorithm">Algorithm:</label>
+                <select id="algorithm">
+                    <option value="first-fit">First Fit</option>
+                    <option value="best-fit">Best Fit</option>
+                </select>
+            </div>
+            
+            <button onclick="allocateMemory()">Allocate Memory</button>
+        </div>
+
+     <div class="memory-view">
+            <h2>Memory Visualization</h2>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="color-box free"></div>
+                    <span>Free Memory</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box allocated"></div>
+                    <span>Allocated Memory</span>
+                </div>
+            </div>
+            <div id="memoryBlocks" class="memory-blocks"></div>
+     </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <h3>Memory Usage</h3>
+                <span id="memoryUsage">0%</span>
+            </div>
+            <div class="stat-item">
+                <h3>Free Memory</h3>
+                <span id="freeMemory">1024 GB</span>
+            </div>
+            <div class="stat-item">
+                <h3>Fragments</h3>
+                <span id="fragments">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
