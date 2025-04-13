@@ -6,6 +6,7 @@
 An educational, interactive web-based simulation project that helps visualize how memory is allocated in real time using different allocation strategies—**Best Fit** and **Paging**.  
 Built with pure **HTML, CSS, and JavaScript**, it’s designed to aid students and beginners in understanding OS-level memory management concepts.
 
+Project link:  https://deepak-5656.github.io/memorymanagementproject/
 ---
 
 ### 🔍 Overview  
