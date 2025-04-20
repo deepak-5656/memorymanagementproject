@@ -7,6 +7,7 @@ An educational, interactive web-based simulation project that helps visualize ho
 Built with pure **HTML, CSS, and JavaScript**, it’s designed to aid students and beginners in understanding OS-level memory management concepts.
 
 Live link Deployed givern below
+
 Project link:  https://deepak-5656.github.io/memorymanagementproject/
 ---
 
